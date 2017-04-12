@@ -1,3 +1,4 @@
-<h1>
-  {{title}}
-</h1>
+<div appDatePicker>
+  <input [(ngModel)]="date" placeholder="DD-MM-YYYY">
+  <app-date-picker [date]="date" (dateUpdated)="handleDateUpdated($event)"></app-date-picker>
+</div>

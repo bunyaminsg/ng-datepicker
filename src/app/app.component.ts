@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app works!';
+  date: string;
+
+  constructor() {
+    this.date = (new Date()).toISOString().split('T')[0];
+  }
+
+  handleDateUpdated(newDate: Date): void {
+    this.date = newDate.toISOString().split('T')[0];
+  }
 }

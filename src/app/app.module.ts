@@ -4,10 +4,14 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { DatePickerDirective } from './date-picker/date-picker.directive';
+import { DatePickerComponent } from './date-picker/date-picker.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DatePickerDirective,
+    DatePickerComponent
   ],
   imports: [
     BrowserModule,

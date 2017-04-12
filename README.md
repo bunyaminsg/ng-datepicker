@@ -1,5 +1,13 @@
 # NgDatepicker
 
+Datepicker component for Angular.
+
+**Note:** You may get `... is changed after check` error in `development` mode if you write an invalid date. There will be no error in production mode:
+
+```
+   ng serve --env=prod
+```
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 
 ## Development server
